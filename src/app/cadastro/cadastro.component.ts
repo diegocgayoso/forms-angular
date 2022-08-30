@@ -10,8 +10,7 @@ export class CadastroComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   cadastrar(form : any){
     if(form.valid){
@@ -21,7 +20,6 @@ export class CadastroComponent implements OnInit {
     }else{
       console.log('Formulário inválido');
       console.log(form);
-
     }
   }
 
