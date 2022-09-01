@@ -11,20 +11,26 @@ export class CadastroComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
+<<<<<<< HEAD
   cadastrar(form:any){
+=======
+  cadastrar(form : any){
+    console.log(form);
+>>>>>>> 48ace2955ad45c418ee188cefc2fdaf2d6d0a80b
     if(form.valid){
       // this.router.navigate(['sucesso']);
       console.log('Formulário enviado');
-      console.log(form);
     }else{
       console.log('Formulário inválido');
+<<<<<<< HEAD
       console.log(form);
       console.log(form.errors);
       console.log(form.controls.nome.errors);
       console.log(form.controls.email.errors);
+=======
+>>>>>>> 48ace2955ad45c418ee188cefc2fdaf2d6d0a80b
     }
   }
 
