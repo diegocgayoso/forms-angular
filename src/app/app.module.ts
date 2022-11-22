@@ -11,6 +11,7 @@ import { FormsModule } from "@angular/forms";
 import { CadastroComponent } from "./cadastro/cadastro.component";
 import { SucessoCadastroComponent } from "./sucesso-cadastro/sucesso-cadastro.component";
 import { MaiorIdadeValidator } from './directives/maior-de-idade.directive';
+import { ValidandoCepDirective } from './directives/validando-cep.directive';
 
 // registerLocaleData(localePT);
 @NgModule({
@@ -20,8 +21,9 @@ import { MaiorIdadeValidator } from './directives/maior-de-idade.directive';
     FooterComponent,
     CadastroComponent,
     SucessoCadastroComponent,
-    MaiorIdadeValidator ,
-    MensagemComponent
+    MaiorIdadeValidator,
+    MensagemComponent,
+    ValidandoCepDirective
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
