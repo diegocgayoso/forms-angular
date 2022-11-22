@@ -10,7 +10,7 @@ import { FooterComponent } from "./components/footer/footer.component";
 import { FormsModule } from "@angular/forms";
 import { CadastroComponent } from "./cadastro/cadastro.component";
 import { SucessoCadastroComponent } from "./sucesso-cadastro/sucesso-cadastro.component";
-import { VerificaMaiorIdadeValidator } from './directive/maior-de-idade.directive';
+import { MaiorIdadeValidator } from './directives/maior-de-idade.directive';
 
 // registerLocaleData(localePT);
 @NgModule({
@@ -20,7 +20,7 @@ import { VerificaMaiorIdadeValidator } from './directive/maior-de-idade.directiv
     FooterComponent,
     CadastroComponent,
     SucessoCadastroComponent,
-    VerificaMaiorIdadeValidator ,
+    MaiorIdadeValidator ,
     MensagemComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
